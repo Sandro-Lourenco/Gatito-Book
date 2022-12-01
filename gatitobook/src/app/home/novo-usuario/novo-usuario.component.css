@@ -1,0 +1,11 @@
+.titulo-registro{
+    color: #8D44F2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn{
+    background-image: linear-gradient(to right, #4c55fc , #8D44F2);
+   color: white;
+}

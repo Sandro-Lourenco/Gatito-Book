@@ -1,0 +1,38 @@
+<header class="sticky-top">
+  <nav class="navbar bg-white">
+    <a class="navbar-bran">
+      <i
+        class="fa fa-bars "
+        (click)="menu.abreMenu()"
+        (keyup.space)="menu.abreMenu()"
+      >
+      </i>
+    </a>
+
+    <div>
+      <img src="../../../assets/img/logo-gatito.png" alt="logo" class="logo">
+    </div>
+
+    <app-menu #menu>
+      <ul class="list-unstyled">
+        <li>
+          <a [routerLink]="['animais', 'novo']">Novo Animal</a>
+        </li>
+      </ul>
+    </app-menu>
+
+    <div *ngIf="user$ | async as user">
+      <div *ngIf="user.name; else login">
+        <i class="fa fa-user-circle mr-1"> </i>
+        <a class="mr-1">{{ user.name }}</a>
+        <a (click)="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <ng-template #login>
+    <span class="navbar-text">
+      <a [routerLink]="['']" class="btn_login">Login</a>
+    </span>
+  </ng-template>
+</header>

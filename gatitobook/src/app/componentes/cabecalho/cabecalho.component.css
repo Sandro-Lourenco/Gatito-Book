@@ -1,0 +1,28 @@
+.logo{
+    width: 200px;
+    text-align: center;
+    
+}
+
+.navbar{
+    justify-content: space-around;
+}
+
+.navbar-bran{
+    width: 20%;
+}
+
+i{
+    padding: 5%;
+    font-size: 30px;
+    color: #8D44F2;
+    border: solid 1px #8D44F2;
+    border-radius: 5px;
+}
+
+.btn_login{
+    color: rgb(255, 255, 255);
+    background-color: #8D44F2;
+    padding: 10px;
+    border-radius: 10px;
+}
